@@ -225,7 +225,6 @@
   display: flex;
   min-height: 320px;
   position: relative;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -255,7 +254,6 @@
   min-height: 320px;
 }
 .trends-card {
-  width: 100%;
   min-height: 100%;
   display: flex;
   align-items: flex-end;
@@ -336,8 +334,10 @@
   justify-content: space-between;
   margin-top: 60px;
 }
-.news {
+.news-main {
   width: 795px;
+}
+.news {
   display: flex;
   flex-wrap: wrap;
 }
@@ -637,7 +637,7 @@ display: inline-block;
 
 .our-products-section {
   box-sizing: border-box;
-  max-width: 1660px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px 15px 65px;
@@ -662,11 +662,15 @@ display: inline-block;
   background: #b59f5b;
 }
 .products-body {
-  width: 1200px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1200px;
+}
+.product-card {
+  width: 33,3%;
 }
 .our_products_first {
   background-image: url(../images/shop-item-desk1.jpg);
@@ -692,7 +696,6 @@ display: inline-block;
   height: 250px;
   border: 3px solid #d3c59d;
   position: relative;
-
 }
 .product-title {
   margin-top: 56px;
@@ -862,5 +865,36 @@ display: inline-block;
   }
   .trends-card {
     width: 50%;
+  }
+  .page {
+    margin: 50px 35px  ;
+  }
+  .news-main {
+    max-width: 770px;
+    margin-right: 30px;
+  }
+  .news-img {
+    width: 100%;
+  }
+  .news-desc{
+    width: 100%;
+  }
+  .aside {
+    max-width: 270px;
+    margin-right: 30px;
+  }
+  .our_products_first {
+    background-image: url(../images/shop-item-tablet1.jpg);
+  }
+  .our_products_second {
+    background-image: url(../images/shop-item-tablet2.jpg);
+  }
+  .our_products_third {
+    background-image: url(../images/shop-item-tablet3.jpg);
+  }
+  
+  .product-card {
+    width: 48,5%;
+
   }
 }
